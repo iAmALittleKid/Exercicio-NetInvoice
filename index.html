@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Double Linked List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <script>
+            //Function Testing
+
+            alert("Double Linked List");
+            let doubleLinked = new DoubleLinkedList(5);
+            alert(doubleLinked.add(6));
+            alert(doubleLinked.add(4));
+            alert(doubleLinked.add(7));
+            alert(doubleLinked.find(5).key);
+            alert(doubleLinked.find(6).key);
+            //remove element from end of list
+            alert(doubleLinked.remove(7));
+            //remove element from middle of the list
+            alert(doubleLinked.remove(6));
+            //remove element from beginning of list
+            alert(doubleLinked.remove(5));
+            //Search for an element that has been removed
+            alert(doubleLinked.find(5));
+            //try to remove a non existent element (has been removed)
+            alert(doubleLinked.remove(5));
+            //remove the only element on the list(first and last)
+            alert(doubleLinked.remove(4));
+            alert(doubleLinked.add(42));
+        </script>
+        
+    </body>
+</html>
